@@ -107,6 +107,6 @@ async def announce(ctx, channel: discord.Channel, t=None, *, d):
 		a.set_author(name=ctx.message.author.name, icon_url=ctx.message.author.avatar_url)
 		await client.send_message(channel, embed=a)
 	
-client.run(os.geten('TOKEN'))
+client.run(os.getenv('TOKEN'))
 	
 
